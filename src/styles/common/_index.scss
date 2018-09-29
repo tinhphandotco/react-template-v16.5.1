@@ -1,0 +1,26 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.btn__main {
+    background: $btnBg;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    &:active {
+        background: $dark;
+    }
+    &--round {
+        // border-radius: 25% 50% 25%;
+        // border-top-left-radius: 50%;
+        // border-bottom-left-radius: 50%;
+        border-radius: 50%;
+    }
+}
+

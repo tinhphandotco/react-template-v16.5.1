@@ -1,24 +1,12 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
-import { _url } from "config/utils";
+import AdminApp from "containers/admin/App"; 
+import Owners from "containers/owners/App"; 
 
-function Home() {
-    return (
-        <div>
-            <h1>Hello Welcome to ReactJs new version: 16.5.1</h1>
-            <h3>Copyright © 2018 Jr Tinh</h3>
-        </div>
-    )
-}
-
-function Background() {
-    return(
-        <div>
-            <img src={_url("/assets/images/bg.jpg")} alt=""/>
-        </div>
-    )
-}
+import {
+    Home
+} from "./index";
 
 function NotFound() {
     return(
@@ -37,14 +25,9 @@ class App extends Component {
     render() {
         return (
             <div className="Root-App">
-                <header>
-                    <Link to="/home">Home</Link>
-                    <br/>
-                    <Link to="/background">Background</Link>
-                </header>
                 <Switch>
-                    <Route exact path="/home" component={Home} />
-                    <Route exact path="/background" component={Background} />
+                    <Route path="/admin" component={AdminApp} />
+                    <Route path="/owners" component={Owners} />
                     <Route exact path="/" component={Home} />
                     <Route component={NotFound} />
                 </Switch>
