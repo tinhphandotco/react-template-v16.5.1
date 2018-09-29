@@ -8,6 +8,7 @@ import configStore from "store";
 import { App } from 'containers';
 import { BASE_PATH } from "config";
 
+import "./styles/main.scss";
 
 const { store, persistor } = configStore();
 
