@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
 import AdminApp from "containers/admin/App"; 
-import Owners from "containers/owners/App"; 
 
 import {
     Home
@@ -27,7 +26,6 @@ class App extends Component {
             <div className="Root-App">
                 <Switch>
                     <Route path="/admin" component={AdminApp} />
-                    <Route path="/owners" component={Owners} />
                     <Route exact path="/" component={Home} />
                     <Route component={NotFound} />
                 </Switch>

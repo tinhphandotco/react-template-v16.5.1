@@ -1,7 +1,7 @@
-import { PUBLIC_URL } from "./index";
+import { BASE_PATH } from "./index";
 
 const _url = (url) => {
-    return `${PUBLIC_URL}${url}`
+    return `${BASE_PATH}/${url}`
 }
 
 export default {
