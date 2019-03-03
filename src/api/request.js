@@ -14,8 +14,7 @@ const debugError = er => {
 }
 
 const request = () => {
-    const token = _store.getState().session.userAuth.token;
-
+    const token = _store.getState().session ? _store.getState().session.userAuth.token : '';
 
     const axiosApi = axios.create({
         baseURL: API_URL,

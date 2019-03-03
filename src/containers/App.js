@@ -3,9 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import AdminApp from "containers/admin/App"; 
 
-import {
-    Home
-} from "./index";
+import Test from "./test";
 
 function NotFound() {
     return(
@@ -25,8 +23,8 @@ class App extends Component {
         return (
             <div className="Root-App">
                 <Switch>
-                    <Route path="/admin" component={AdminApp} />
-                    <Route exact path="/" component={Home} />
+                    <Route path="/test" component={Test} />
+                    <Route exact path="/" component={AdminApp} />
                     <Route component={NotFound} />
                 </Switch>
             </div>

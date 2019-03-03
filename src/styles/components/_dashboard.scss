@@ -1,0 +1,17 @@
+.Dashboard {
+    .logo {
+        padding: 24px;
+        a {
+            font-size: 30px;
+            color: white;
+        }
+
+        &__collapsed {
+            text-align: center;
+        }
+    }
+
+    .ant-layout-sider {
+        height: 100vh;
+    }
+}
